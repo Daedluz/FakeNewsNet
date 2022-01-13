@@ -1,0 +1,867 @@
+2022-01-13 14:15:02,690 20984 news_content_collection ERROR Exception in getting data from url speedtalk.com/forum/viewtopic.php?t=51650
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 25, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPConnectionPool(host='speedtalk.com', port=80): Max retries exceeded with url: /forum/viewtopic.php?t=51650 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd7529e1520>: Failed to establish a new connection: [Errno 101] Network is unreachable')) on URL http://speedtalk.com/forum/viewtopic.php?t=51650
+2022-01-13 14:15:04,997 20984 news_content_collection ERROR Exception in getting data from url speedtalk.com/forum/viewtopic.php?t=51650
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 36, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPSConnectionPool(host='speedtalk.com', port=443): Max retries exceeded with url: /forum/viewtopic.php?t=51650 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fd752bdc130>: Failed to establish a new connection: [Errno 101] Network is unreachable')) on URL https://speedtalk.com/forum/viewtopic.php?t=51650
+2022-01-13 14:15:07,764 20984 news_content_collection ERROR Exception in getting data from url politics2020.info/index.php/2018/03/13/court-orders-obama-to-pay-400-million-in-restitution/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 25, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPConnectionPool(host='politics2020.info', port=80): Max retries exceeded with url: /index.php/2018/03/13/court-orders-obama-to-pay-400-million-in-restitution/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd752bf4be0>: Failed to establish a new connection: [Errno -2] Name or service not known')) on URL http://politics2020.info/index.php/2018/03/13/court-orders-obama-to-pay-400-million-in-restitution/
+2022-01-13 14:15:09,809 20984 news_content_collection ERROR Exception in getting data from url politics2020.info/index.php/2018/03/13/court-orders-obama-to-pay-400-million-in-restitution/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 36, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPSConnectionPool(host='politics2020.info', port=443): Max retries exceeded with url: /index.php/2018/03/13/court-orders-obama-to-pay-400-million-in-restitution/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fd752bf46d0>: Failed to establish a new connection: [Errno -2] Name or service not known')) on URL https://politics2020.info/index.php/2018/03/13/court-orders-obama-to-pay-400-million-in-restitution/
+2022-01-13 14:15:32,055 20984 __init__ DEBUG Building prefix dict from /home/daedluz/.local/lib/python3.8/site-packages/jieba/dict.txt ...
+2022-01-13 14:15:32,562 20984 __init__ DEBUG Dumping model to file cache /tmp/jieba.cache
+2022-01-13 14:15:32,891 20984 __init__ DEBUG Loading model cost 0.8358166217803955 seconds.
+2022-01-13 14:15:32,892 20984 __init__ DEBUG Prefix dict has been built succesfully.
+2022-01-13 14:15:53,167 20984 news_content_collection ERROR Exception in getting data from url http://yournewswire.com/youngest-leader-george-soros/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://yournewswire.com/youngest-leader-george-soros/ on URL http://yournewswire.com/youngest-leader-george-soros/
+2022-01-13 14:16:08,049 20984 news_content_collection ERROR Exception in getting data from url http://dailyfeed.news/barack-obama-tweets-sick-attack-on-john-mccain-says-he-should-have-died/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://cde.news/newsfeed/barack-obama-tweets-sick-attack-on-john-mccain-says-he-should-have-died on URL http://dailyfeed.news/barack-obama-tweets-sick-attack-on-john-mccain-says-he-should-have-died/
+2022-01-13 14:16:27,373 20984 news_content_collection ERROR Exception in getting data from url http://therightists.com/gretchen-carlson-the-2nd-amendment-was-written-before-guns-were-invented/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://therightists.com/gretchen-carlson-the-2nd-amendment-was-written-before-guns-were-invented/ on URL http://therightists.com/gretchen-carlson-the-2nd-amendment-was-written-before-guns-were-invented/
+2022-01-13 14:16:34,996 20984 news_content_collection ERROR Exception in getting data from url http://yournewswire.com/pope-francis-jesus-metaphorical/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://yournewswire.com/pope-francis-jesus-metaphorical/ on URL http://yournewswire.com/pope-francis-jesus-metaphorical/
+2022-01-13 14:16:57,309 20984 news_content_collection ERROR Exception in getting data from url http://nrtonline.info/breaking-nancy-pelosi-to-resign-after-new-revelations/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPConnectionPool(host='nrtonline.info', port=80): Max retries exceeded with url: /breaking-nancy-pelosi-to-resign-after-new-revelations/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd7530b7340>: Failed to establish a new connection: [Errno -2] Name or service not known')) on URL http://nrtonline.info/breaking-nancy-pelosi-to-resign-after-new-revelations/
+2022-01-13 14:17:08,498 20984 news_content_collection ERROR Exception in getting data from url usaconservativereport.com/2017/08/breaking-leaked-picture-obama-dragged-judge-handcuffs-wiretapping-trump/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 25, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPConnectionPool(host='usaconservativereport.com', port=80): Max retries exceeded with url: /2017/08/breaking-leaked-picture-obama-dragged-judge-handcuffs-wiretapping-trump/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd7530b7940>: Failed to establish a new connection: [Errno -2] Name or service not known')) on URL http://usaconservativereport.com/2017/08/breaking-leaked-picture-obama-dragged-judge-handcuffs-wiretapping-trump/
+2022-01-13 14:17:10,526 20984 news_content_collection ERROR Exception in getting data from url usaconservativereport.com/2017/08/breaking-leaked-picture-obama-dragged-judge-handcuffs-wiretapping-trump/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 36, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPSConnectionPool(host='usaconservativereport.com', port=443): Max retries exceeded with url: /2017/08/breaking-leaked-picture-obama-dragged-judge-handcuffs-wiretapping-trump/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fd74bab35e0>: Failed to establish a new connection: [Errno -2] Name or service not known')) on URL https://usaconservativereport.com/2017/08/breaking-leaked-picture-obama-dragged-judge-handcuffs-wiretapping-trump/
+2022-01-13 14:17:22,274 20984 news_content_collection ERROR Exception in getting data from url https://www.puppetstringnews.com/blog/clinton-campaign-official-arrested-by-fbi-on-child-rapetrafficking-charges
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://puppetstringnews.com/blog/clinton-campaign-official-arrested-by-fbi-on-child-rapetrafficking-charges on URL https://www.puppetstringnews.com/blog/clinton-campaign-official-arrested-by-fbi-on-child-rapetrafficking-charges
+2022-01-13 14:17:29,169 20984 news_content_collection ERROR Exception in getting data from url donaldtrainews.blogspot.com/2017/11/breaking-rosa-parks-granddaughter-slams.html
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 25, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: http://donaldtrainews.blogspot.com/2017/11/breaking-rosa-parks-granddaughter-slams.html on URL http://donaldtrainews.blogspot.com/2017/11/breaking-rosa-parks-granddaughter-slams.html
+2022-01-13 14:17:31,693 20984 news_content_collection ERROR Exception in getting data from url donaldtrainews.blogspot.com/2017/11/breaking-rosa-parks-granddaughter-slams.html
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 36, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://donaldtrainews.blogspot.com/2017/11/breaking-rosa-parks-granddaughter-slams.html on URL https://donaldtrainews.blogspot.com/2017/11/breaking-rosa-parks-granddaughter-slams.html
+2022-01-13 14:17:58,019 20984 news_content_collection ERROR Exception in getting data from url http://yournewswire.com/clinton-email-we-must-destroy-syria-for-israel/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://yournewswire.com/clinton-email-we-must-destroy-syria-for-israel/ on URL http://yournewswire.com/clinton-email-we-must-destroy-syria-for-israel/
+2022-01-13 14:18:05,029 20984 news_content_collection ERROR Exception in getting data from url https://quickening-spirit.com/fareed-zakaria-calls-for-jihad-rape-of-white-women/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPSConnectionPool(host='quickening-spirit.com', port=443): Max retries exceeded with url: /fareed-zakaria-calls-for-jihad-rape-of-white-women/ (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])"))) on URL https://quickening-spirit.com/fareed-zakaria-calls-for-jihad-rape-of-white-women/
+2022-01-13 14:18:13,619 20984 news_content_collection ERROR Exception in getting data from url www.newsweek.com/president-donald-trump-kim-jong-un-nobel-peace-prize-north-korea-south-korea-905146
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 25, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 403 Client Error: Forbidden for url: https://www.newsweek.com/president-donald-trump-kim-jong-un-nobel-peace-prize-north-korea-south-korea-905146 on URL http://www.newsweek.com/president-donald-trump-kim-jong-un-nobel-peace-prize-north-korea-south-korea-905146
+2022-01-13 14:18:16,395 20984 news_content_collection ERROR Exception in getting data from url www.newsweek.com/president-donald-trump-kim-jong-un-nobel-peace-prize-north-korea-south-korea-905146
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 36, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 403 Client Error: Forbidden for url: https://www.newsweek.com/president-donald-trump-kim-jong-un-nobel-peace-prize-north-korea-south-korea-905146 on URL https://www.newsweek.com/president-donald-trump-kim-jong-un-nobel-peace-prize-north-korea-south-korea-905146
+2022-01-13 14:18:32,301 20984 news_content_collection ERROR Exception in getting data from url http://econewsmedia.org/2018/02/01/nfl-lawyer-claimed-super-bowl-rigged-found-dead/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: http://econewsmedia.org/2018/02/01/nfl-lawyer-claimed-super-bowl-rigged-found-dead/ on URL http://econewsmedia.org/2018/02/01/nfl-lawyer-claimed-super-bowl-rigged-found-dead/
+2022-01-13 14:18:42,198 20984 news_content_collection ERROR Exception in getting data from url www.smoaky.com/forum/index.php?/topic/161489-barrels-removed-from-clinton-property-contain-parts-from-3-missing-women/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 25, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 403 Client Error: Forbidden for url: http://www.smoaky.com/forum/index.php?/topic/161489-barrels-removed-from-clinton-property-contain-parts-from-3-missing-women/ on URL http://www.smoaky.com/forum/index.php?/topic/161489-barrels-removed-from-clinton-property-contain-parts-from-3-missing-women/
+2022-01-13 14:18:44,359 20984 news_content_collection ERROR Exception in getting data from url www.smoaky.com/forum/index.php?/topic/161489-barrels-removed-from-clinton-property-contain-parts-from-3-missing-women/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 36, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 403 Client Error: Forbidden for url: https://www.smoaky.com/forum/index.php?/topic/161489-barrels-removed-from-clinton-property-contain-parts-from-3-missing-women/ on URL https://www.smoaky.com/forum/index.php?/topic/161489-barrels-removed-from-clinton-property-contain-parts-from-3-missing-women/
+2022-01-13 14:18:48,009 20984 news_content_collection ERROR Exception in getting data from url http://londonwebnews.com/2017/06/01/liberal-women-hate-me-because-of-my-striking-beauty-and-intellect-says-kellyanne-conway/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: http://londonwebnews.com/2017/06/01/liberal-women-hate-me-because-of-my-striking-beauty-and-intellect-says-kellyanne-conway/ on URL http://londonwebnews.com/2017/06/01/liberal-women-hate-me-because-of-my-striking-beauty-and-intellect-says-kellyanne-conway/
+2022-01-13 14:19:24,040 20984 news_content_collection ERROR Exception in getting data from url https://yournewswire.com/broward-county-sheriff-fired/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://yournewswire.com/broward-county-sheriff-fired/ on URL https://yournewswire.com/broward-county-sheriff-fired/
+2022-01-13 14:19:32,063 20984 news_content_collection ERROR Exception in getting data from url http://www.newslo.com/price-better-budget-cancer-patients-die-quickly/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 403 Client Error: Forbidden for url: https://www.newslo.com/price-better-budget-cancer-patients-die-quickly/ on URL http://www.newslo.com/price-better-budget-cancer-patients-die-quickly/
+2022-01-13 14:19:38,145 20984 news_content_collection ERROR Exception in getting data from url https://sentinelksmo.org/breaking-greitens-accuser-admits-photo-session-may-dream/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPSConnectionPool(host='sentinelksmo.org', port=443): Max retries exceeded with url: /breaking-greitens-accuser-admits-photo-session-may-dream/ (Caused by SSLError(SSLError("bad handshake: SysCallError(104, 'ECONNRESET')"))) on URL https://sentinelksmo.org/breaking-greitens-accuser-admits-photo-session-may-dream/
+2022-01-13 14:19:44,214 20984 news_content_collection ERROR Exception in getting data from url https://lidblog.com/illegal-immigrant-mexican-kids/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 403 Client Error: Forbidden for url: https://lidblog.com/illegal-immigrant-mexican-kids/ on URL https://lidblog.com/illegal-immigrant-mexican-kids/
+2022-01-13 14:19:51,140 20984 news_content_collection ERROR Exception in getting data from url www.christforums.org/topic/4569-pope-francis-to-followers-%E2%80%9Ckoran-and-holy-bible-are-the-same%E2%80%9D/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 25, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: http://www.christforums.org/topic/4569-pope-francis-to-followers-%E2%80%9Ckoran-and-holy-bible-are-the-same%E2%80%9D/ on URL http://www.christforums.org/topic/4569-pope-francis-to-followers-%E2%80%9Ckoran-and-holy-bible-are-the-same%E2%80%9D/
+2022-01-13 14:19:53,760 20984 news_content_collection ERROR Exception in getting data from url www.christforums.org/topic/4569-pope-francis-to-followers-%E2%80%9Ckoran-and-holy-bible-are-the-same%E2%80%9D/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 36, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPSConnectionPool(host='www.christforums.org', port=443): Max retries exceeded with url: /topic/4569-pope-francis-to-followers-%E2%80%9Ckoran-and-holy-bible-are-the-same%E2%80%9D/ (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])"))) on URL https://www.christforums.org/topic/4569-pope-francis-to-followers-%E2%80%9Ckoran-and-holy-bible-are-the-same%E2%80%9D/
+2022-01-13 14:20:43,009 20984 news_content_collection ERROR Exception in getting data from url www.newslo.com/kasich-woman-not-intelligent-enough-keep-legs-closed-can-entrust-abortion-decision/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 25, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 403 Client Error: Forbidden for url: https://www.newslo.com/kasich-woman-not-intelligent-enough-keep-legs-closed-can-entrust-abortion-decision/ on URL http://www.newslo.com/kasich-woman-not-intelligent-enough-keep-legs-closed-can-entrust-abortion-decision/
+2022-01-13 14:20:45,186 20984 news_content_collection ERROR Exception in getting data from url www.newslo.com/kasich-woman-not-intelligent-enough-keep-legs-closed-can-entrust-abortion-decision/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 36, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 403 Client Error: Forbidden for url: https://www.newslo.com/kasich-woman-not-intelligent-enough-keep-legs-closed-can-entrust-abortion-decision/ on URL https://www.newslo.com/kasich-woman-not-intelligent-enough-keep-legs-closed-can-entrust-abortion-decision/
+2022-01-13 14:21:07,698 20984 news_content_collection ERROR Exception in getting data from url https://dailyworldupdate.us/2018/04/29/cnn-shocks-america-fires-journalist-who-made-fun-of-sarah-sanders-face/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://dailyworldupdate.us/2018/04/29/cnn-shocks-america-fires-journalist-who-made-fun-of-sarah-sanders-face/ on URL https://dailyworldupdate.us/2018/04/29/cnn-shocks-america-fires-journalist-who-made-fun-of-sarah-sanders-face/
+2022-01-13 14:21:20,108 20984 news_content_collection ERROR Exception in getting data from url http://flashnewss.club/trumps-dhs-secretary-confirms-they-are-preparing-to-arrest-sanctuary-city-leaders/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPConnectionPool(host='flashnewss.club', port=80): Max retries exceeded with url: /trumps-dhs-secretary-confirms-they-are-preparing-to-arrest-sanctuary-city-leaders/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd74826e070>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')) on URL http://flashnewss.club/trumps-dhs-secretary-confirms-they-are-preparing-to-arrest-sanctuary-city-leaders/
+2022-01-13 14:21:31,065 20984 news_content_collection ERROR Exception in getting data from url http://eveningw.com/california-democrat-maxine-waters-charged-3-counts-support/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPConnectionPool(host='eveningw.com', port=80): Max retries exceeded with url: /california-democrat-maxine-waters-charged-3-counts-support/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd751370940>: Failed to establish a new connection: [Errno -2] Name or service not known')) on URL http://eveningw.com/california-democrat-maxine-waters-charged-3-counts-support/
+2022-01-13 14:21:34,079 20984 news_content_collection ERROR Exception in getting data from url http://nrtonline.info/breaking-british-intelligence-seizes-clinton-foundation-warehouse-400-million-in-cash/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPConnectionPool(host='nrtonline.info', port=80): Max retries exceeded with url: /breaking-british-intelligence-seizes-clinton-foundation-warehouse-400-million-in-cash/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd751370130>: Failed to establish a new connection: [Errno -2] Name or service not known')) on URL http://nrtonline.info/breaking-british-intelligence-seizes-clinton-foundation-warehouse-400-million-in-cash/
+2022-01-13 14:21:43,835 20984 news_content_collection ERROR Exception in getting data from url http://hotgazette.com/rudy-giuliani/official-rudy-giuliani-officially-resigns-trumps-legal-team-on-its-last-leg/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: http://hotgazette.com/rudy-giuliani/official-rudy-giuliani-officially-resigns-trumps-legal-team-on-its-last-leg/ on URL http://hotgazette.com/rudy-giuliani/official-rudy-giuliani-officially-resigns-trumps-legal-team-on-its-last-leg/
+2022-01-13 14:21:51,192 20984 news_content_collection ERROR Exception in getting data from url https://www.nyfoxnews.co/michelle-obama-just-received-life-shattering-news-from-the-doctor/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPSConnectionPool(host='www.nyfoxnews.co', port=443): Max retries exceeded with url: /michelle-obama-just-received-life-shattering-news-from-the-doctor/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fd74827d8e0>: Failed to establish a new connection: [Errno -2] Name or service not known')) on URL https://www.nyfoxnews.co/michelle-obama-just-received-life-shattering-news-from-the-doctor/
+2022-01-13 14:22:01,364 20984 news_content_collection ERROR Exception in getting data from url https://yournewswire.com/tens-of-thousands-of-scientists-declare-climate-change-a-hoax/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://yournewswire.com/tens-of-thousands-of-scientists-declare-climate-change-a-hoax/ on URL https://yournewswire.com/tens-of-thousands-of-scientists-declare-climate-change-a-hoax/
+2022-01-13 14:22:23,583 20984 news_content_collection ERROR Exception in getting data from url https://yournewswire.com/lisa-page-squeals-dnc-server-not-hacked-russia/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://yournewswire.com/lisa-page-squeals-dnc-server-not-hacked-russia/ on URL https://yournewswire.com/lisa-page-squeals-dnc-server-not-hacked-russia/
+2022-01-13 14:22:33,479 20984 news_content_collection ERROR Exception in getting data from url http://www.newsdonaldtrumps.com/robert-redford-says-michelle-and-barack-obama-should-get-five-years-in-prison/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPConnectionPool(host='www.newsdonaldtrumps.com', port=80): Max retries exceeded with url: /robert-redford-says-michelle-and-barack-obama-should-get-five-years-in-prison/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd74820e700>: Failed to establish a new connection: [Errno -2] Name or service not known')) on URL http://www.newsdonaldtrumps.com/robert-redford-says-michelle-and-barack-obama-should-get-five-years-in-prison/
+2022-01-13 14:22:50,129 20984 news_content_collection ERROR Exception in getting data from url https://yournewswire.com/puerto-rico-mayor-fraud-disaster/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://yournewswire.com/puerto-rico-mayor-fraud-disaster/ on URL https://yournewswire.com/puerto-rico-mayor-fraud-disaster/
+2022-01-13 14:23:19,882 20984 news_content_collection ERROR Exception in getting data from url https://www.chicagosuntimes.live/queen-elizabeth-says-muslim-refugees-are-dividing-nationality-i-fully-agree-with-donald-trump-we-shouldvideo/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPSConnectionPool(host='www.chicagosuntimes.live', port=443): Max retries exceeded with url: /queen-elizabeth-says-muslim-refugees-are-dividing-nationality-i-fully-agree-with-donald-trump-we-shouldvideo/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fd74884db80>: Failed to establish a new connection: [Errno -2] Name or service not known')) on URL https://www.chicagosuntimes.live/queen-elizabeth-says-muslim-refugees-are-dividing-nationality-i-fully-agree-with-donald-trump-we-shouldvideo/
+2022-01-13 14:23:24,599 20984 news_content_collection ERROR Exception in getting data from url https://web.archive.org/web/20180819235451/https://www.chicagosuntimes.live/queen-elizabeth-says-muslim-refugees-are-dividing-nationality-i-fully-agree-with-donald-trump-we-shouldvideo/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://web.archive.org/web/20180819235451/https://www.chicagosuntimes.live/queen-elizabeth-says-muslim-refugees-are-dividing-nationality-i-fully-agree-with-donald-trump-we-shouldvideo/ on URL https://web.archive.org/web/20180819235451/https://www.chicagosuntimes.live/queen-elizabeth-says-muslim-refugees-are-dividing-nationality-i-fully-agree-with-donald-trump-we-shouldvideo/
+2022-01-13 14:23:26,820 20984 news_content_collection ERROR Exception in getting data from url https://theglobalheadlines.net/hollywood-actor-bruce-willis-trump-is-the-best-us-president-ever-anyone-who-dislikes-him-should-move-to-2/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPSConnectionPool(host='theglobalheadlines.net', port=443): Max retries exceeded with url: /hollywood-actor-bruce-willis-trump-is-the-best-us-president-ever-anyone-who-dislikes-him-should-move-to-2/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fd74884d2e0>: Failed to establish a new connection: [Errno -2] Name or service not known')) on URL https://theglobalheadlines.net/hollywood-actor-bruce-willis-trump-is-the-best-us-president-ever-anyone-who-dislikes-him-should-move-to-2/
+2022-01-13 14:23:40,818 20984 news_content_collection ERROR Exception in getting data from url http://patriotcrier.com/1-6kk-0/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPConnectionPool(host='patriotcrier.com', port=80): Max retries exceeded with url: /1-6kk-0/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd751249670>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')) on URL http://patriotcrier.com/1-6kk-0/
+2022-01-13 14:23:54,570 20984 news_content_collection ERROR Exception in getting data from url http://americannews.com/busted-nasa-accidentally-destroys-every-climate-change-advocate-exposing-massive-truth-behind-antartica/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPConnectionPool(host='americannews.com', port=80): Read timed out. (read timeout=7) on URL http://americannews.com/busted-nasa-accidentally-destroys-every-climate-change-advocate-exposing-massive-truth-behind-antartica/
+2022-01-13 14:24:05,022 20984 news_content_collection ERROR Exception in getting data from url http://www.bluedotdaily.com/trump-police-officers-and-firefighters-make-too-much-money-hits-them-with-tax-penalty/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: http://www.bluedotdaily.com/trump-police-officers-and-firefighters-make-too-much-money-hits-them-with-tax-penalty/ on URL http://www.bluedotdaily.com/trump-police-officers-and-firefighters-make-too-much-money-hits-them-with-tax-penalty/
+2022-01-13 14:24:10,198 20984 news_content_collection ERROR Exception in getting data from url https://web.archive.org/web/20171227233221/http://www.bluedotdaily.com/trump-police-officers-and-firefighters-make-too-much-money-hits-them-with-tax-penalty/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 403 Client Error: Forbidden for url: https://web.archive.org/web/20171227233221/http://www.bluedotdaily.com/trump-police-officers-and-firefighters-make-too-much-money-hits-them-with-tax-penalty/ on URL https://web.archive.org/web/20171227233221/http://www.bluedotdaily.com/trump-police-officers-and-firefighters-make-too-much-money-hits-them-with-tax-penalty/
+2022-01-13 14:24:31,419 20984 news_content_collection ERROR Exception in getting data from url http://yournewswire.com/melanic-trump-exorcist-white-house/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://yournewswire.com/melanic-trump-exorcist-white-house/ on URL http://yournewswire.com/melanic-trump-exorcist-white-house/
+2022-01-13 14:24:44,209 20984 news_content_collection ERROR Exception in getting data from url http://maga2020.us/news/clint-eastwood-leaves-his-estate-to-the-trump-2020-campaign/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPConnectionPool(host='maga2020.us', port=80): Max retries exceeded with url: /news/clint-eastwood-leaves-his-estate-to-the-trump-2020-campaign/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd7489fa280>: Failed to establish a new connection: [Errno -2] Name or service not known')) on URL http://maga2020.us/news/clint-eastwood-leaves-his-estate-to-the-trump-2020-campaign/
+2022-01-13 14:25:09,919 20984 news_content_collection ERROR Exception in getting data from url https://www.tdtalliance.com/jefferson-davis-statue-replaced-obama-likeness/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPSConnectionPool(host='www.tdtalliance.com', port=443): Read timed out. (read timeout=7) on URL https://www.tdtalliance.com/jefferson-davis-statue-replaced-obama-likeness/
+2022-01-13 14:25:37,154 20984 news_content_collection ERROR Exception in getting data from url mainerepublicemailalert.com/2017/03/24/breaking-autopsy-results-from-vince-fosters-exhumed-body-cause-of-death-to-be-changed/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 25, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://mainerepublicemailalert.com/2017/03/24/breaking-autopsy-results-from-vince-fosters-exhumed-body-cause-of-death-to-be-changed/ on URL http://mainerepublicemailalert.com/2017/03/24/breaking-autopsy-results-from-vince-fosters-exhumed-body-cause-of-death-to-be-changed/
+2022-01-13 14:25:39,978 20984 news_content_collection ERROR Exception in getting data from url mainerepublicemailalert.com/2017/03/24/breaking-autopsy-results-from-vince-fosters-exhumed-body-cause-of-death-to-be-changed/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 36, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://mainerepublicemailalert.com/2017/03/24/breaking-autopsy-results-from-vince-fosters-exhumed-body-cause-of-death-to-be-changed/ on URL https://mainerepublicemailalert.com/2017/03/24/breaking-autopsy-results-from-vince-fosters-exhumed-body-cause-of-death-to-be-changed/
+2022-01-13 14:25:45,821 20984 news_content_collection ERROR Exception in getting data from url https://web.archive.org/web/20170325151856/http://mainerepublicemailalert.com/2017/03/24/breaking-autopsy-results-from-vince-fosters-exhumed-body-cause-of-death-to-be-changed/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://web.archive.org/web/20210505123012/https://mainerepublicemailalert.com/2017/03/24/breaking-autopsy-results-from-vince-fosters-exhumed-body-cause-of-death-to-be-changed/ on URL https://web.archive.org/web/20170325151856/http://mainerepublicemailalert.com/2017/03/24/breaking-autopsy-results-from-vince-fosters-exhumed-body-cause-of-death-to-be-changed/
+2022-01-13 14:26:38,992 20984 news_content_collection ERROR Exception in getting data from url http://wkrg.com/2017/11/14/curious-robocall-seeks-damaging-information-on-moore/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://www.wkrg.com/2017/11/14/curious-robocall-seeks-damaging-information-on-moore/ on URL http://wkrg.com/2017/11/14/curious-robocall-seeks-damaging-information-on-moore/
+2022-01-13 14:26:59,218 20984 news_content_collection ERROR Exception in getting data from url http://flashnewss.club/breaking-shep-smith-to-be-canned-because-he-cant-control-his-hate-for-donald-trump/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPConnectionPool(host='flashnewss.club', port=80): Max retries exceeded with url: /breaking-shep-smith-to-be-canned-because-he-cant-control-his-hate-for-donald-trump/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd74884d040>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')) on URL http://flashnewss.club/breaking-shep-smith-to-be-canned-because-he-cant-control-his-hate-for-donald-trump/
+2022-01-13 14:27:21,885 20984 news_content_collection ERROR Exception in getting data from url http://eveningw.com/breaking-woman-says-offered-big-money-washington-post-accuse-roy-moore-misconduct/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPConnectionPool(host='eveningw.com', port=80): Max retries exceeded with url: /breaking-woman-says-offered-big-money-washington-post-accuse-roy-moore-misconduct/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd74884de20>: Failed to establish a new connection: [Errno -2] Name or service not known')) on URL http://eveningw.com/breaking-woman-says-offered-big-money-washington-post-accuse-roy-moore-misconduct/
+2022-01-13 14:27:28,420 20984 news_content_collection ERROR Exception in getting data from url https://www.conservativestories.com/2018/05/21/just-john-kerry-facing-prison/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://www.conservativestories.com/2018/05/21/just-john-kerry-facing-prison/ on URL https://www.conservativestories.com/2018/05/21/just-john-kerry-facing-prison/
+2022-01-13 14:27:51,697 20984 news_content_collection ERROR Exception in getting data from url http://realtimepolitics.com/2018/05/06/melania-hit-donald-trump/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPConnectionPool(host='realtimepolitics.com', port=80): Max retries exceeded with url: /2018/05/06/melania-hit-donald-trump/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fd74bab3dc0>, 'Connection to realtimepolitics.com timed out. (connect timeout=7)')) on URL http://realtimepolitics.com/2018/05/06/melania-hit-donald-trump/
+2022-01-13 14:27:55,402 20984 news_content_collection ERROR Exception in getting data from url https://web.archive.org/web/20180512222117/http://realtimepolitics.com:80/2018/05/06/melania-hit-donald-trump/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 403 Client Error: Forbidden for url: https://web.archive.org/web/20180512222117/http://realtimepolitics.com:80/2018/05/06/melania-hit-donald-trump/ on URL https://web.archive.org/web/20180512222117/http://realtimepolitics.com:80/2018/05/06/melania-hit-donald-trump/
+2022-01-13 14:27:58,531 20984 news_content_collection ERROR Exception in getting data from url https://portalstate.com/index.php/2017/05/08/obama-canceled-it-trump-reinstated-it-a-very-sacred-day-is-back/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPSConnectionPool(host='portalstate.com', port=443): Max retries exceeded with url: /index.php/2017/05/08/obama-canceled-it-trump-reinstated-it-a-very-sacred-day-is-back/ (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])"))) on URL https://portalstate.com/index.php/2017/05/08/obama-canceled-it-trump-reinstated-it-a-very-sacred-day-is-back/
+2022-01-13 14:28:29,489 20984 news_content_collection ERROR Exception in getting data from url http://majorthoughts.com/chines-restaurant-in-coral-spring-florida-got-busted-for-selling-dog-meat-as-special-menu/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPConnectionPool(host='majorthoughts.com', port=80): Max retries exceeded with url: /chines-restaurant-in-coral-spring-florida-got-busted-for-selling-dog-meat-as-special-menu/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd748927880>: Failed to establish a new connection: [Errno -2] Name or service not known')) on URL http://majorthoughts.com/chines-restaurant-in-coral-spring-florida-got-busted-for-selling-dog-meat-as-special-menu/
+2022-01-13 14:28:45,513 20984 news_content_collection ERROR Exception in getting data from url https://yournewswire.com/bill-gates-doctor-vaccinate/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://yournewswire.com/bill-gates-doctor-vaccinate/ on URL https://yournewswire.com/bill-gates-doctor-vaccinate/
+2022-01-13 14:29:20,160 20984 news_content_collection ERROR Exception in getting data from url http://americannews.com/25127-2/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPConnectionPool(host='americannews.com', port=80): Read timed out. (read timeout=7) on URL http://americannews.com/25127-2/
+2022-01-13 14:29:26,869 20984 news_content_collection ERROR Exception in getting data from url http://politicsdepot.com/2018/02/28/kushner-and-wife-ivanka-trump-were-tossed-out-of-the-white-house/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: http://politicsdepot.com/2018/02/28/kushner-and-wife-ivanka-trump-were-tossed-out-of-the-white-house/ on URL http://politicsdepot.com/2018/02/28/kushner-and-wife-ivanka-trump-were-tossed-out-of-the-white-house/
+2022-01-13 14:29:39,327 20984 news_content_collection ERROR Exception in getting data from url https://www.viraltruthwire.com/obama-secretly-flees-us-leaves-stunning-evidence-behind/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPSConnectionPool(host='www.viraltruthwire.com', port=443): Max retries exceeded with url: /obama-secretly-flees-us-leaves-stunning-evidence-behind/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fd7489deaf0>: Failed to establish a new connection: [Errno -2] Name or service not known')) on URL https://www.viraltruthwire.com/obama-secretly-flees-us-leaves-stunning-evidence-behind/
+2022-01-13 14:29:49,514 20984 news_content_collection ERROR Exception in getting data from url http://politifeed.net/news/abc-news-joins-obama-to-ban-american-flag-lapel-pins-heres-what-you-need-to-know
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: http://politifeed.net/news/abc-news-joins-obama-to-ban-american-flag-lapel-pins-heres-what-you-need-to-know on URL http://politifeed.net/news/abc-news-joins-obama-to-ban-american-flag-lapel-pins-heres-what-you-need-to-know
+2022-01-13 14:30:09,134 20984 news_content_collection ERROR Exception in getting data from url http://dailyfeed.news/flight-crew-takes-a-knee-and-walks-off-leaving-new-orleans-saints-stranded-on-runway/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://cde.news/newsfeed/flight-crew-takes-a-knee-and-walks-off-leaving-new-orleans-saints-stranded-on-runway on URL http://dailyfeed.news/flight-crew-takes-a-knee-and-walks-off-leaving-new-orleans-saints-stranded-on-runway/
+2022-01-13 14:30:15,078 20984 news_content_collection ERROR Exception in getting data from url what-you-missed.com/floyd-mayweather-jr-donates-a-whopping-sum-of-money-to-houston-after-hurricane/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 25, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPConnectionPool(host='what-you-missed.com', port=80): Max retries exceeded with url: /floyd-mayweather-jr-donates-a-whopping-sum-of-money-to-houston-after-hurricane/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd748927460>: Failed to establish a new connection: [Errno -2] Name or service not known')) on URL http://what-you-missed.com/floyd-mayweather-jr-donates-a-whopping-sum-of-money-to-houston-after-hurricane/
+2022-01-13 14:30:17,145 20984 news_content_collection ERROR Exception in getting data from url what-you-missed.com/floyd-mayweather-jr-donates-a-whopping-sum-of-money-to-houston-after-hurricane/
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 36, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPSConnectionPool(host='what-you-missed.com', port=443): Max retries exceeded with url: /floyd-mayweather-jr-donates-a-whopping-sum-of-money-to-houston-after-hurricane/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fd748927a00>: Failed to establish a new connection: [Errno -2] Name or service not known')) on URL https://what-you-missed.com/floyd-mayweather-jr-donates-a-whopping-sum-of-money-to-houston-after-hurricane/
+2022-01-13 14:30:29,404 20984 news_content_collection ERROR Exception in getting data from url https://web.archive.org/web/20170314174618/http://wbn12.com/rosenberg-tx/new-star-wars-movie-filming-near-rosenberg-texas-large-number-of-extras-needed/
+Traceback (most recent call last):
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 377, in _make_request
+    httplib_response = conn.getresponse(buffering=True)
+TypeError: getresponse() got an unexpected keyword argument 'buffering'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/contrib/pyopenssl.py", line 294, in recv_into
+    return self.connection.recv_into(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/OpenSSL/SSL.py", line 1822, in recv_into
+    self._raise_ssl_error(self._ssl, result)
+  File "/usr/lib/python3/dist-packages/OpenSSL/SSL.py", line 1622, in _raise_ssl_error
+    raise WantReadError()
+OpenSSL.SSL.WantReadError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/contrib/pyopenssl.py", line 294, in recv_into
+    return self.connection.recv_into(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/OpenSSL/SSL.py", line 1822, in recv_into
+    self._raise_ssl_error(self._ssl, result)
+  File "/usr/lib/python3/dist-packages/OpenSSL/SSL.py", line 1622, in _raise_ssl_error
+    raise WantReadError()
+OpenSSL.SSL.WantReadError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 49, in crawl_link_article
+    article.parse()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 261, in parse
+    self.fetch_images()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 286, in fetch_images
+    self.set_reddit_top_img()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 407, in set_reddit_top_img
+    self.set_top_img(s.largest_image_url())
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/images.py", line 189, in largest_image_url
+    dimension = fetch_image_dimension(
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/images.py", line 167, in fetch_image_dimension
+    return fetch_url(url, useragent, referer, retries, dimension=True)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/images.py", line 96, in fetch_url
+    response = requests.get(url, stream=True, timeout=5, headers={
+  File "/home/daedluz/.local/lib/python3.8/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 597, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 380, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/usr/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.8/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/contrib/pyopenssl.py", line 309, in recv_into
+    return self.recv_into(*args, **kwargs)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/contrib/pyopenssl.py", line 306, in recv_into
+    if not util.wait_for_read(self.socket, self.socket.gettimeout()):
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/util/wait.py", line 143, in wait_for_read
+    return wait_for_socket(sock, read=True, timeout=timeout)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/util/wait.py", line 104, in poll_wait_for_socket
+    return bool(_retry_on_intr(do_poll, timeout))
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/util/wait.py", line 42, in _retry_on_intr
+    return fn(timeout)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/util/wait.py", line 102, in do_poll
+    return poll_obj.poll(t)
+KeyboardInterrupt
+2022-01-13 14:30:31,035 20984 news_content_collection ERROR Exception in getting data from url www.usacarry.com/forums/politics-and-news/63339-chuck-schumer-s-steamy-affair-high-school-cheerleader-confirmed.html
+Traceback (most recent call last):
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 377, in _make_request
+    httplib_response = conn.getresponse(buffering=True)
+TypeError: getresponse() got an unexpected keyword argument 'buffering'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/contrib/pyopenssl.py", line 294, in recv_into
+    return self.connection.recv_into(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/OpenSSL/SSL.py", line 1822, in recv_into
+    self._raise_ssl_error(self._ssl, result)
+  File "/usr/lib/python3/dist-packages/OpenSSL/SSL.py", line 1622, in _raise_ssl_error
+    raise WantReadError()
+OpenSSL.SSL.WantReadError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 23, in crawl_link_article
+    article.download()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 170, in download
+    html = network.get_html_2XX_only(self.url, self.config)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/network.py", line 62, in get_html_2XX_only
+    response = requests.get(
+  File "/home/daedluz/.local/lib/python3.8/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/requests/sessions.py", line 668, in send
+    history = [resp for resp in gen] if allow_redirects else []
+  File "/home/daedluz/.local/lib/python3.8/site-packages/requests/sessions.py", line 668, in <listcomp>
+    history = [resp for resp in gen] if allow_redirects else []
+  File "/home/daedluz/.local/lib/python3.8/site-packages/requests/sessions.py", line 239, in resolve_redirects
+    resp = self.send(
+  File "/home/daedluz/.local/lib/python3.8/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 597, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 380, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/usr/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.8/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/contrib/pyopenssl.py", line 306, in recv_into
+    if not util.wait_for_read(self.socket, self.socket.gettimeout()):
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/util/wait.py", line 143, in wait_for_read
+    return wait_for_socket(sock, read=True, timeout=timeout)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/util/wait.py", line 104, in poll_wait_for_socket
+    return bool(_retry_on_intr(do_poll, timeout))
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/util/wait.py", line 42, in _retry_on_intr
+    return fn(timeout)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/util/wait.py", line 102, in do_poll
+    return poll_obj.poll(t)
+KeyboardInterrupt
+2022-01-13 14:30:31,727 20984 news_content_collection ERROR Exception in getting data from url www.usacarry.com/forums/politics-and-news/63339-chuck-schumer-s-steamy-affair-high-school-cheerleader-confirmed.html
+Traceback (most recent call last):
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/contrib/pyopenssl.py", line 453, in wrap_socket
+    cnx.do_handshake()
+  File "/usr/lib/python3/dist-packages/OpenSSL/SSL.py", line 1915, in do_handshake
+    self._raise_ssl_error(self._ssl, result)
+  File "/usr/lib/python3/dist-packages/OpenSSL/SSL.py", line 1622, in _raise_ssl_error
+    raise WantReadError()
+OpenSSL.SSL.WantReadError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 34, in crawl_link_article
+    article.download()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 170, in download
+    html = network.get_html_2XX_only(self.url, self.config)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/network.py", line 62, in get_html_2XX_only
+    response = requests.get(
+  File "/home/daedluz/.local/lib/python3.8/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/requests/sessions.py", line 668, in send
+    history = [resp for resp in gen] if allow_redirects else []
+  File "/home/daedluz/.local/lib/python3.8/site-packages/requests/sessions.py", line 668, in <listcomp>
+    history = [resp for resp in gen] if allow_redirects else []
+  File "/home/daedluz/.local/lib/python3.8/site-packages/requests/sessions.py", line 239, in resolve_redirects
+    resp = self.send(
+  File "/home/daedluz/.local/lib/python3.8/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 597, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/connection.py", line 337, in connect
+    self.sock = ssl_wrap_socket(
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/util/ssl_.py", line 344, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/contrib/pyopenssl.py", line 455, in wrap_socket
+    if not util.wait_for_read(sock, sock.gettimeout()):
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/util/wait.py", line 143, in wait_for_read
+    return wait_for_socket(sock, read=True, timeout=timeout)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/util/wait.py", line 104, in poll_wait_for_socket
+    return bool(_retry_on_intr(do_poll, timeout))
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/util/wait.py", line 42, in _retry_on_intr
+    return fn(timeout)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/util/wait.py", line 102, in do_poll
+    return poll_obj.poll(t)
+KeyboardInterrupt
+2022-01-13 14:30:32,237 20984 news_content_collection ERROR Exception in getting data from url http://www.puppetstringnews.com/blog/tennessee-gop-twitter-taken-down-after-tweet-exposin-pelosi-involved-in-pedophilia
+Traceback (most recent call last):
+  File "/mnt/d/Programs/FakeNewsNet/code/news_content_collection.py", line 47, in crawl_link_article
+    article.download()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/article.py", line 170, in download
+    html = network.get_html_2XX_only(self.url, self.config)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/newspaper/network.py", line 62, in get_html_2XX_only
+    response = requests.get(
+  File "/home/daedluz/.local/lib/python3.8/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/daedluz/.local/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 597, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.8/http/client.py", line 1256, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1302, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1251, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1011, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.8/http/client.py", line 951, in send
+    self.connect()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/connection.py", line 181, in connect
+    conn = self._new_conn()
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/connection.py", line 158, in _new_conn
+    conn = connection.create_connection(
+  File "/home/daedluz/.local/lib/python3.8/site-packages/urllib3/util/connection.py", line 57, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+KeyboardInterrupt
