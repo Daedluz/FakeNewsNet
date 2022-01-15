@@ -13,6 +13,12 @@ def json_to_csv (mypath, csv_name):
             file_list.append(fullpath)
             # print(fullpath)
 
+    tmp = []
+    for i in range(len(file_list)):
+        if ("retweets" not in file_list[i]):
+            tmp.append(file_list[i])
+    file_list = tmp
+
     with open(file_list[0]) as json_data:
         data = json.load(json_data)
 
@@ -21,13 +27,14 @@ def json_to_csv (mypath, csv_name):
     df["text"][0] = df["text"][0].replace('\n',' ')
 
     for i in range (1, len(file_list)):
+        print(i, end=' ')
         with open(file_list[i]) as json_data:
             data = json.load(json_data)
 
         temp_df = pd.json_normalize(data)
 
         # if (i == 32):
-        #     print(temp_df["text"].count('\n\n'))
+        #     print(temp_df["text"].count('\n\n')) 
 
         temp_df["text"][0] = temp_df["text"][0].replace('\u2019','\'')
         temp_df["text"][0] = temp_df["text"][0].replace('\n',' ')
@@ -43,4 +50,8 @@ def json_to_csv (mypath, csv_name):
 
 # json_to_csv("./fakenewsnet_dataset/politifact/fake", "politifact_fake.csv")
 
-json_to_csv("./fakenewsnet_dataset/politifact/real", "politifact_real.csv")
+# json_to_csv("./fakenewsnet_dataset/politifact/real", "politifact_real.csv")
+
+json_to_csv("./fakenewsnet_dataset/gossipcop/fake", "gossip_fake.csv")
+
+json_to_csv("./fakenewsnet_dataset/gossipcop/real", "gossip_real.csv")
